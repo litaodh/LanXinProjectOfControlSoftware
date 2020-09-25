@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GoTrainSimulatorNet
 {
-    public partial class Form1 : Form
+    public partial class ControlMainDlg : Form
     {
-        public Form1()
+        public ControlMainDlg()
         {
             InitializeComponent();
         }
