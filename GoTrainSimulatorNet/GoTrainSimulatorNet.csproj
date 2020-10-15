@@ -53,12 +53,37 @@
     <Compile Include="AreaCameraTriggerable.cs" />
     <Compile Include="BoardCardControl.cs" />
     <Compile Include="BoardCardControl2.cs" />
+    <Compile Include="CaissonParameterConfigDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaissonParameterConfigDlg.Designer.cs">
+      <DependentUpon>CaissonParameterConfigDlg.cs</DependentUpon>
+    </Compile>
     <Compile Include="CameraSignalControl.cs" />
+    <Compile Include="CameraTriggerParamConfigDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CameraTriggerParamConfigDlg.Designer.cs">
+      <DependentUpon>CameraTriggerParamConfigDlg.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlUnitColleague.cs" />
     <Compile Include="GlobalParameter.cs" />
     <Compile Include="LinearCameraTriggerable.cs" />
     <Compile Include="Logger.cs" />
+    <Compile Include="MagneticSteelParamConfigDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MagneticSteelParamConfigDlg.Designer.cs">
+      <DependentUpon>MagneticSteelParamConfigDlg.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyTimer.cs" />
+    <Compile Include="RadarParameterConfigDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadarParameterConfigDlg.Designer.cs">
+      <DependentUpon>RadarParameterConfigDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RunInfo.cs" />
     <Compile Include="SerialPortControl.cs" />
     <Compile Include="Signal\AreaNanoCameraSignal.cs" />
     <Compile Include="Caisson.cs" />
@@ -78,8 +103,17 @@
     <Compile Include="Signal\Signal.cs" />
     <Compile Include="Triggerable.cs" />
     <Compile Include="TTLSignalBoardControl.cs" />
+    <EmbeddedResource Include="CaissonParameterConfigDlg.resx">
+      <DependentUpon>CaissonParameterConfigDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CameraTriggerParamConfigDlg.resx">
+      <DependentUpon>CameraTriggerParamConfigDlg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ControlMainDlg.resx">
       <DependentUpon>ControlMainDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MagneticSteelParamConfigDlg.resx">
+      <DependentUpon>MagneticSteelParamConfigDlg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -89,7 +123,12 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RadarParameterConfigDlg.resx">
+      <DependentUpon>RadarParameterConfigDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Luster.TrafficSeries.UI.RunInfo.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,6 +144,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Automation.BDaq4\4.0.0.0__463f5928d60183a0\Automation.BDaq4.dll" />
+    <None Include="Images\Train.png" />
+    <None Include="Images\5c75e8aece149.png" />
+    <None Include="Images\5c753f2a3f931.png" />
+    <None Include="Images\5c754f477f8bf.png" />
+    <None Include="Images\5c7628cf61e82.png" />
+    <None Include="Images\5c7665cccb128.png" />
+    <None Include="Images\5c98476acaaf0.png" />
+    <None Include="Images\leftTrain.png" />
+    <Content Include="Images\timg.jpg" />
+    <Content Include="Images\cometrain.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
