@@ -59,4 +59,29 @@ namespace Luster.TrafficSeries
         //未知
         UNKNOWN= 0xFF
     }
+    /// <summary>
+    /// 行车方向
+    /// </summary>
+    public enum GoTrainDirection
+    {
+        Left,
+        Right,
+        HasNo
+    }
+    /// <summary>
+    /// 磁钢端
+    /// </summary>
+    public enum MagneticSteelEnd
+    {
+        Near,
+        Far
+    }
+    /// <summary>
+    /// 设备端
+    /// </summary>
+    public enum DeviceEnd
+    {
+        Left,
+        Right
+    }
 }

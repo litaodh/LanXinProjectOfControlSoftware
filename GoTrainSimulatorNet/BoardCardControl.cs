@@ -19,7 +19,7 @@ namespace Luster.TrafficSeries.SystemInteraction
         public BoardCardControl(string deviceDescription, string profilePath = "")
         {
             this.deviceDescription = deviceDescription;
-            this.ProfilePath = profilePath;
+            this.profilePath = profilePath;
             this.instantDiCtrl = new InstantDiCtrl();
             this.instantDoCtrl = new InstantDoCtrl();
             this.instantDiCtrl.SelectedDevice = new DeviceInformation(this.DeviceDescription);
