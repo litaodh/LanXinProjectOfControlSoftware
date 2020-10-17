@@ -12,6 +12,7 @@ namespace Luster.TrafficSeries.BLL
     /// </summary>
     internal class Radar
     {
+        private string name;
         private DeviceEnd deviceEnd;
         private float currentVelocity;
         private SerialPortControl serialPortCtr;
@@ -30,8 +31,10 @@ namespace Luster.TrafficSeries.BLL
             }
         }
 
-        public Radar(SerialPortControl serialPortCtr)
+        public Radar(SerialPortControl serialPortCtr,DeviceEnd deviceEnd,string name)
         {
+            this.name = name;
+            this.deviceEnd = deviceEnd;
             this.serialPortCtr = serialPortCtr;
             this.receiveBytes = new byte[5];
             if (this.serialPortCtr!=null)
@@ -45,11 +48,27 @@ namespace Luster.TrafficSeries.BLL
             }
         }
 
+        public string Name
+        {
+            get
+            {
+                return this.name;
+            }
+        }
+
         public DeviceEnd DeviceEnd
         {
             get
             {
                 return deviceEnd;
+            }
+        }
+
+        public SerialEntity SerialEntity
+        {
+            get
+            {
+                return this.serialPortCtr.SerialEntity;
             }
         }
 

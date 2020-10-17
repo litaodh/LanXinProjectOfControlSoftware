@@ -25,6 +25,15 @@ namespace Luster.TrafficSeries.BLL
         private string name;
         private float spacing;//单位毫米
         private Stopwatch timingSW;
+        private UInt32 timeOut;
+
+        public string BoardCardDeviceDescription
+        {
+            get
+            {
+                return this.boardCardCtr.DeviceDescription;
+            }
+        }
 
         public int StartChannle
         {
@@ -64,11 +73,6 @@ namespace Luster.TrafficSeries.BLL
             {
                 return name;
             }
-
-            set
-            {
-                name = value;
-            }
         }
 
         public float Spacing
@@ -84,12 +88,26 @@ namespace Luster.TrafficSeries.BLL
             }
         }
 
+        public uint TimeOut
+        {
+            get
+            {
+                return timeOut;
+            }
+
+            set
+            {
+                timeOut = value;
+            }
+        }
+
         public MagneticSteel(ControlUnitMediator unitMediator,BoardCardControl2 boardCardCtr,
             int startChannle,
             int endChannle,
             DeviceEnd deviceEnd,
             MagneticSteelEnd magneticSteelEnd,
-            UInt32 timeOut=2000,string name=""):base(unitMediator)
+            string name,
+            UInt32 timeOut=2000):base(unitMediator)
         {           
             this.boardCardCtr = boardCardCtr;
             this.startChannle = startChannle;
@@ -100,6 +118,7 @@ namespace Luster.TrafficSeries.BLL
             }
             this.hasEndSignal = false;
             this.hasStartSignal = false;
+            this.timeOut = timeOut;
             this.signalTimeoutTimer = new MyTimer(timeOut);
             this.deviceEnd = deviceEnd;
             this.magneticSteelEnd = magneticSteelEnd;
@@ -129,11 +148,11 @@ namespace Luster.TrafficSeries.BLL
                     float velocity = this.spacing / this.timingSW.ElapsedMilliseconds/1000;
                     if(this.magneticSteelEnd == MagneticSteelEnd.Far)
                     {
-                        this.UnitMediator.FarEndGoTrain(this.deviceEnd, velocity);
+                        this.unitMediator.FarEndGoTrain(this.deviceEnd, velocity);
                     }   
                     else
                     {
-                        this.UnitMediator.NearEndGoTrain(this.deviceEnd, velocity);
+                        this.unitMediator.NearEndGoTrain(this.deviceEnd, velocity);
                     }
                     hasStartSignal = false;
                     hasEndSignal = false;                   
@@ -142,11 +161,11 @@ namespace Luster.TrafficSeries.BLL
                 {                   
                     if (this.magneticSteelEnd == MagneticSteelEnd.Far)
                     {
-                        this.UnitMediator.FarEndGoTrain(this.deviceEnd, 0);
+                        this.unitMediator.FarEndGoTrain(this.deviceEnd, 0);
                     }
                     else
                     {
-                        this.UnitMediator.NearEndGoTrain(this.deviceEnd, 0);
+                        this.unitMediator.NearEndGoTrain(this.deviceEnd, 0);
                     }
                     hasEndSignal = false;
                 }
@@ -161,11 +180,11 @@ namespace Luster.TrafficSeries.BLL
                 hasEndSignal = false;
                 if (this.magneticSteelEnd == MagneticSteelEnd.Far)
                 {
-                    this.UnitMediator.FarEndGoTrain(this.deviceEnd, 0);
+                    this.unitMediator.FarEndGoTrain(this.deviceEnd, 0);
                 }
                 else
                 {
-                    this.UnitMediator.NearEndGoTrain(this.deviceEnd, 0);
+                    this.unitMediator.NearEndGoTrain(this.deviceEnd, 0);
                 }
             }           
            

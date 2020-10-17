@@ -7,12 +7,19 @@ using Luster.TrafficSeries.SystemInteraction;
 
 namespace Luster.TrafficSeries.BLL
 {
-    internal class LinearCameraTriggerable : ITriggerable
+    internal class LineaCameraTriggerable : ITriggerable
     {
         private TTLSignalBoardControl ttlSignalBoarCtr;
         private int channle;
-        private bool isDispsed;
+        private bool isDispsed;        
 
+        public SerialEntity SerialEntity
+        {
+            get
+            {
+                return this.ttlSignalBoarCtr.SerialEntity;
+            }
+        }
         public int Channle
         {
             get
@@ -21,7 +28,7 @@ namespace Luster.TrafficSeries.BLL
             }
         }
 
-        public LinearCameraTriggerable(SerialEntity serialEntity,int channle)
+        public LineaCameraTriggerable(SerialEntity serialEntity,int channle)
         {
             this.ttlSignalBoarCtr = new TTLSignalBoardControl(serialEntity);
             this.channle = channle;
@@ -29,7 +36,7 @@ namespace Luster.TrafficSeries.BLL
             this.ttlSignalBoarCtr.SetTTLEnableState(EnableType.FLASH, false);
         }
 
-        ~LinearCameraTriggerable()
+        ~LineaCameraTriggerable()
         {
             this.Dispose(false);
         }

@@ -51,8 +51,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AreaCameraTriggerable.cs" />
+    <Compile Include="AreaCameraTriggerParamepter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AreaCameraTriggerParamepter.Designer.cs">
+      <DependentUpon>AreaCameraTriggerParamepter.cs</DependentUpon>
+    </Compile>
     <Compile Include="BoardCardControl.cs" />
     <Compile Include="BoardCardControl2.cs" />
+    <Compile Include="BoardCardManager.cs" />
+    <Compile Include="CaissonInfo.cs" />
     <Compile Include="CaissonParameterConfigDlg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +68,7 @@
       <DependentUpon>CaissonParameterConfigDlg.cs</DependentUpon>
     </Compile>
     <Compile Include="CameraSignalControl.cs" />
+    <Compile Include="CameraTriggerInfo.cs" />
     <Compile Include="CameraTriggerParamConfigDlg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,15 +77,24 @@
     </Compile>
     <Compile Include="ControlUnitColleague.cs" />
     <Compile Include="GlobalParameter.cs" />
+    <Compile Include="LineaCameraTriggerParameter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LineaCameraTriggerParameter.Designer.cs">
+      <DependentUpon>LineaCameraTriggerParameter.cs</DependentUpon>
+    </Compile>
     <Compile Include="LinearCameraTriggerable.cs" />
     <Compile Include="Logger.cs" />
+    <Compile Include="MagneticSteelInfo.cs" />
     <Compile Include="MagneticSteelParamConfigDlg.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MagneticSteelParamConfigDlg.Designer.cs">
       <DependentUpon>MagneticSteelParamConfigDlg.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mediator.cs" />
     <Compile Include="MyTimer.cs" />
+    <Compile Include="RadarInfo.cs" />
     <Compile Include="RadarParameterConfigDlg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +121,9 @@
     <Compile Include="Signal\Signal.cs" />
     <Compile Include="Triggerable.cs" />
     <Compile Include="TTLSignalBoardControl.cs" />
+    <EmbeddedResource Include="AreaCameraTriggerParamepter.resx">
+      <DependentUpon>AreaCameraTriggerParamepter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CaissonParameterConfigDlg.resx">
       <DependentUpon>CaissonParameterConfigDlg.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ControlMainDlg.resx">
       <DependentUpon>ControlMainDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LineaCameraTriggerParameter.resx">
+      <DependentUpon>LineaCameraTriggerParameter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MagneticSteelParamConfigDlg.resx">
       <DependentUpon>MagneticSteelParamConfigDlg.cs</DependentUpon>
@@ -128,6 +152,10 @@
     <EmbeddedResource Include="RadarParameterConfigDlg.resx">
       <DependentUpon>RadarParameterConfigDlg.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\Luster.TrafficSeries.UI.CaissonInfo.datasource" />
+    <None Include="Properties\DataSources\Luster.TrafficSeries.UI.CameraTriggerInfo.datasource" />
+    <None Include="Properties\DataSources\Luster.TrafficSeries.UI.MagneticSteelInfo.datasource" />
+    <None Include="Properties\DataSources\Luster.TrafficSeries.UI.RadarInfo.datasource" />
     <None Include="Properties\DataSources\Luster.TrafficSeries.UI.RunInfo.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

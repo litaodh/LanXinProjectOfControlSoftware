@@ -42,28 +42,29 @@
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.maints = new System.Windows.Forms.ToolStrip();
+            this.mainssr = new System.Windows.Forms.StatusStrip();
+            this.infodgv = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.mainssr = new System.Windows.Forms.StatusStrip();
-            this.infodgv = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.leftCameraspic = new System.Windows.Forms.PictureBox();
             this.leftDevicepic = new System.Windows.Forms.PictureBox();
             this.rightDeivcepic = new System.Windows.Forms.PictureBox();
             this.rightCameraspic = new System.Windows.Forms.PictureBox();
             this.rightDeviceTextpic = new System.Windows.Forms.PictureBox();
             this.leftDeviceTextpic = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.midComeTrainpic = new System.Windows.Forms.PictureBox();
             this.leftCaissonpic = new System.Windows.Forms.PictureBox();
             this.rightCaissonpic = new System.Windows.Forms.PictureBox();
             this.leftCaissonTextpic = new System.Windows.Forms.PictureBox();
             this.trainTextpic = new System.Windows.Forms.PictureBox();
             this.rightCaissonTextpic = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.leftBottomCaissonpic = new System.Windows.Forms.PictureBox();
             this.bottomMidCaissonpic = new System.Windows.Forms.PictureBox();
             this.rightBottomCaissonpic = new System.Windows.Forms.PictureBox();
@@ -73,29 +74,29 @@
             this.leftBottomCaissonTextpic = new System.Windows.Forms.PictureBox();
             this.bottomMidCaissonTextpic = new System.Windows.Forms.PictureBox();
             this.rightBottomCaissonTextpic = new System.Windows.Forms.PictureBox();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.infoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.runInfobds = new System.Windows.Forms.BindingSource(this.components);
+            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.mainms.SuspendLayout();
             this.maints.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.infodgv)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leftCameraspic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftDevicepic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightDeivcepic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightCameraspic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightDeviceTextpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftDeviceTextpic)).BeginInit();
-            this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.midComeTrainpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftCaissonpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightCaissonpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftCaissonTextpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trainTextpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightCaissonTextpic)).BeginInit();
-            this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leftBottomCaissonpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bottomMidCaissonpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightBottomCaissonpic)).BeginInit();
@@ -217,57 +218,13 @@
             this.toolStripButton2,
             this.toolStripButton3,
             this.toolStripButton4,
-            this.toolStripButton5});
+            this.toolStripButton5,
+            this.toolStripButton6});
             this.maints.Location = new System.Drawing.Point(0, 25);
             this.maints.Name = "maints";
             this.maints.Size = new System.Drawing.Size(1549, 25);
             this.maints.TabIndex = 1;
             this.maints.Text = "toolStrip1";
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(76, 22);
-            this.toolStripButton1.Text = "远端来车";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(76, 22);
-            this.toolStripButton2.Text = "开启沉箱";
-            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(76, 22);
-            this.toolStripButton3.Text = "近端来车";
-            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(76, 22);
-            this.toolStripButton4.Text = "水泵抽水";
-            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
-            // 
-            // toolStripButton5
-            // 
-            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(76, 22);
-            this.toolStripButton5.Text = "结束过车";
-            this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
             // 
             // mainssr
             // 
@@ -316,6 +273,103 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1013, 231);
             this.tableLayoutPanel2.TabIndex = 4;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel3.Controls.Add(this.midComeTrainpic, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.leftCaissonpic, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.rightCaissonpic, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.leftCaissonTextpic, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.trainTextpic, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.rightCaissonTextpic, 2, 1);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 290);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 250F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1013, 316);
+            this.tableLayoutPanel3.TabIndex = 5;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.Controls.Add(this.leftBottomCaissonpic, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.bottomMidCaissonpic, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.rightBottomCaissonpic, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.leftBottomWaterPumppic, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.midBottomWaterPumppic, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.rightBottomWaterPumppic, 2, 1);
+            this.tableLayoutPanel4.Controls.Add(this.leftBottomCaissonTextpic, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.bottomMidCaissonTextpic, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.rightBottomCaissonTextpic, 2, 2);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 612);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1013, 362);
+            this.tableLayoutPanel4.TabIndex = 6;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(76, 22);
+            this.toolStripButton1.Text = "远端来车";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(76, 22);
+            this.toolStripButton2.Text = "开启沉箱";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(76, 22);
+            this.toolStripButton3.Text = "近端来车";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(76, 22);
+            this.toolStripButton4.Text = "水泵抽水";
+            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
+            // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(76, 22);
+            this.toolStripButton5.Text = "结束过车";
+            this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
             // 
             // leftCameraspic
             // 
@@ -377,27 +431,6 @@
             this.leftDeviceTextpic.TabStop = false;
             this.leftDeviceTextpic.Paint += new System.Windows.Forms.PaintEventHandler(this.leftDeviceTextpic_Paint);
             // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel3.Controls.Add(this.midComeTrainpic, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.leftCaissonpic, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.rightCaissonpic, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.leftCaissonTextpic, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.trainTextpic, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.rightCaissonTextpic, 2, 1);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 290);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 250F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1013, 316);
-            this.tableLayoutPanel3.TabIndex = 5;
-            // 
             // midComeTrainpic
             // 
             this.midComeTrainpic.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -457,31 +490,6 @@
             this.rightCaissonTextpic.TabIndex = 8;
             this.rightCaissonTextpic.TabStop = false;
             this.rightCaissonTextpic.Paint += new System.Windows.Forms.PaintEventHandler(this.rightCaissonTextpic_Paint);
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 3;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Controls.Add(this.leftBottomCaissonpic, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.bottomMidCaissonpic, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.rightBottomCaissonpic, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.leftBottomWaterPumppic, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.midBottomWaterPumppic, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.rightBottomWaterPumppic, 2, 1);
-            this.tableLayoutPanel4.Controls.Add(this.leftBottomCaissonTextpic, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.bottomMidCaissonTextpic, 1, 2);
-            this.tableLayoutPanel4.Controls.Add(this.rightBottomCaissonTextpic, 2, 2);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 612);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1013, 362);
-            this.tableLayoutPanel4.TabIndex = 6;
             // 
             // leftBottomCaissonpic
             // 
@@ -573,12 +581,6 @@
             this.rightBottomCaissonTextpic.TabStop = false;
             this.rightBottomCaissonTextpic.Paint += new System.Windows.Forms.PaintEventHandler(this.rightBottomCaissonTextpic_Paint);
             // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -598,6 +600,15 @@
             // runInfobds
             // 
             this.runInfobds.DataSource = typeof(Luster.TrafficSeries.UI.RunInfo);
+            // 
+            // toolStripButton6
+            // 
+            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
+            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton6.Name = "toolStripButton6";
+            this.toolStripButton6.Size = new System.Drawing.Size(123, 22);
+            this.toolStripButton6.Text = "toolStripButton6";
+            this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
             // ControlMainDlg
             // 
@@ -623,20 +634,20 @@
             this.maints.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.infodgv)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.leftCameraspic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftDevicepic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightDeivcepic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightCameraspic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightDeviceTextpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftDeviceTextpic)).EndInit();
-            this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.midComeTrainpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftCaissonpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightCaissonpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftCaissonTextpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trainTextpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightCaissonTextpic)).EndInit();
-            this.tableLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.leftBottomCaissonpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bottomMidCaissonpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightBottomCaissonpic)).EndInit();
@@ -699,6 +710,7 @@
         private System.Windows.Forms.PictureBox rightBottomCaissonTextpic;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn infoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ToolStripButton toolStripButton6;
     }
 }
 

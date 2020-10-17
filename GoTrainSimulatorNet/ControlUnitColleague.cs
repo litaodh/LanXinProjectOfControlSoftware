@@ -8,18 +8,10 @@ namespace Luster.TrafficSeries.BLL
 {
     internal abstract class ControlUnitColleague
     {
-        private ControlUnitMediator unitMediator;
+        protected ControlUnitMediator unitMediator;
         public ControlUnitColleague(ControlUnitMediator unitMediator)
         {
             this.unitMediator = unitMediator;
-        }
-
-        internal ControlUnitMediator UnitMediator
-        {
-            get
-            {
-                return unitMediator;
-            }
         }
     }
 }

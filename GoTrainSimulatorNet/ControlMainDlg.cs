@@ -170,7 +170,13 @@ namespace Luster.TrafficSeries.UI
         private void ControlMainDlg_ClientSizeChanged(object sender, EventArgs e)
         {
             this.Refresh();
-        } 
+        }
         #endregion
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            CameraTriggerParamConfigDlg dlg = new CameraTriggerParamConfigDlg();
+            dlg.ShowDialog();
+        }
     }
 }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
+using System.Reflection;
 
 namespace Luster.TrafficSeries
 {
@@ -16,7 +18,9 @@ namespace Luster.TrafficSeries
 
     public enum CameraType
     {
-        Linear,
+        [Description("线阵相机")]     
+        Linea,
+        [Description("面阵相机")]
         Area
     }
 
@@ -32,6 +36,18 @@ namespace Luster.TrafficSeries
         public const string DALSALinea2K = "DALSALinea2K";
         public const string DALSALinea4K = "DALSALinea4K";
         public const string DALSANano = "DALSANano";
+
+        public static List<string> GetSerieNames()
+        {
+            FieldInfo[] serieInfos = typeof(CameraSerie).GetFields(BindingFlags.Static | BindingFlags.Public);
+            List<string> names = new List<string>();
+            foreach(var info in serieInfos)
+            {
+                names.Add(info.GetRawConstantValue().ToString());
+            }
+
+            return names;
+        }
     }
     /// <summary>
     /// 
@@ -80,8 +96,25 @@ namespace Luster.TrafficSeries
     /// 设备端
     /// </summary>
     public enum DeviceEnd
-    {
-        Left,
+    {       
+        Left,       
         Right
+    }
+
+    public class Tools
+    {
+        public static string GetEnumDesc(Enum e)
+        {
+            FieldInfo enumInfo = e.GetType().GetField(e.ToString());
+            DescriptionAttribute[] EnumAtrributes = (DescriptionAttribute[])enumInfo.
+                GetCustomAttributes(typeof(DescriptionAttribute), false);
+
+            if(EnumAtrributes.Length>0)
+            {
+                return EnumAtrributes[0].Description;
+            }
+
+            return e.ToString();
+        }
     }
 }
